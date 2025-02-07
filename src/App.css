@@ -1,0 +1,76 @@
+/* styles.css */
+
+.about-container {
+	width: 100%;
+	padding-top: 60px; /* Padding from the top */
+	padding-bottom: 60px; /* Padding from the bottom */
+	display: flex;
+	justify-content: space-between;
+	gap: 100px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	padding-left: 20px; /* Padding from the left side */
+	padding-right: 20px; /* Padding from the right side */
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px; /* Max width to center the content */
+  }
+  
+  .about-left,
+  .about-right {
+	flex: 1;
+  }
+  
+  @media (min-width: 1024px) {
+	.about-container {
+	  padding-left: 0px; /* Adjust the left padding for larger screens */
+	  padding-right: 0px; /* Adjust the right padding for larger screens */
+	}
+  }
+  
+  /* styles.css */
+
+.services-container {
+	width: 100%;
+	padding-top: 60px; /* Padding from the top */
+	padding-bottom: 60px; /* Padding from the bottom */
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+	padding-left: 20px; /* Padding from the left side */
+	padding-right: 20px; /* Padding from the right side */
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px; /* Max width to center the content */
+  }
+  
+  @media (min-width: 1024px) {
+	.services-container {
+	  padding-left: 50px; /* Adjust left padding for larger screens */
+	  padding-right: 50px; /* Adjust right padding for larger screens */
+	}
+  }
+  
+  /* styles.css */
+
+.portfolio-container {
+	width: 100%;
+	padding-top: 60px; /* Padding from the top */
+	padding-bottom: 60px; /* Padding from the bottom */
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+	padding-left: 20px; /* Padding from the left side */
+	padding-right: 20px; /* Padding from the right side */
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px; /* Max width to center the content */
+  }
+  
+  @media (min-width: 1024px) {
+	.portfolio-container {
+	  padding-left: 50px; /* Adjust left padding for larger screens */
+	  padding-right: 50px; /* Adjust right padding for larger screens */
+	}
+  }
+  
