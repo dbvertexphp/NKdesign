@@ -52,11 +52,11 @@ const Working = () => {
 						return (
 							<div
 								key={index}
-								className="flex flex-col justify-center items-center gap-5 border-2 border-yellow-500 rounded-md p-6 shadow-md"
+								className="flex flex-col justify-center items-center gap-5 border-2 border-red-500 rounded-md p-6 shadow-md"
 								style={{ padding: "15px" }}
 							>
 								<div>
-									<item.icon className="size-[80px] bg-yellow-500 hover:bg-black hover:fill-white p-4 rounded-full cursor-pointer" />
+									<item.icon className="size-[80px] bg-red-500 hover:bg-black hover:fill-white p-4 rounded-full cursor-pointer" />
 								</div>
 								<h1 className="text-2xl font-bold uppercase">{item.title}</h1>
 								<p className="text-[20px] text-center text-gray-600">

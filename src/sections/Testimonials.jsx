@@ -10,7 +10,7 @@ const Testimonials = ()=>{
 	  variants={slideUpVariants}
 	  className="services-container lg:w-[80%] w-[90%] m-auto flex flex-col justify-between items-center gap-6"
 	>
-	  <motion.h1 variants={slideUpVariants} className="text-yellow-500 text-2xl">
+	  <motion.h1 variants={slideUpVariants} className="text-red-500 text-2xl">
 		  TESTIMONIALS
 	  </motion.h1>
 
@@ -23,7 +23,7 @@ const Testimonials = ()=>{
 
 	  <motion.div
 		variants={slideUpVariants}
-		className="w-[120px] h-[6px] bg-yellow-500"
+		className="w-[120px] h-[6px] bg-red-500"
 	  ></motion.div>
 
 	   <motion.div
@@ -35,14 +35,14 @@ const Testimonials = ()=>{
 		 {
 			clients.map((item, index)=>{
 				return <div key={index} className="flex flex-col justify-center" style={{"margin-bottom":"50px"}}>
-				<div className="border-2 border-white hover:bg-yellow-500 pb-[100px] pt-[30px]">
-				  <p className="text-white hover:text-black text-lg text-center" style={{margin:"50px"}}>{item.about}</p>
+				<div className="border-2 border-white hover:bg-red-500 pb-[100px] pt-[30px]">
+				  <p className="text-white hover:text-white text-lg text-center" style={{margin:"50px"}}>{item.about}</p>
 				</div>
                  
 				<div className="flex flex-col justify-center items-center gap-[5px]"style={{margin:"-50px"}}>
 				   <img className="mt-[-50px]" src={item.image} alt="client image" />
 				   <h1 className="text-white text-[27px] font-semibold uppercase">{item.name}</h1>
-				   <h1 className="text-yellow-500 text-[22px]">{item.post}</h1>
+				   <h1 className="text-red-500 text-[22px]">{item.post}</h1>
 				</div>
 
 				</div>

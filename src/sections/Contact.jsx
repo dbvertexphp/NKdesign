@@ -16,7 +16,7 @@ const Contact = () => {
 				>
 					<motion.h1
 						variants={slideUpVariants}
-						className="text-yellow-500 text-2xl"
+						className="text-red-500 text-2xl"
 					>
 						CONTACT US
 					</motion.h1>
@@ -27,7 +27,7 @@ const Contact = () => {
 					>
 						REACH US FOR ANY QUERY
 					</motion.h1>
-					<div className="w-[120px] h-[6px] bg-yellow-500"></div>
+					<div className="w-[120px] h-[6px] bg-red-500"></div>
 					<p className="text-3xl italic text-gray-600 mt-[60px]">
 						Welcome to Nkdesign, the renowned destination for customized
 						Building design and construction solutions.
@@ -77,7 +77,7 @@ const Contact = () => {
 						/>
 						<motion.button
 							variants={zoomInVariants}
-							className="bg-yellow-500 hover:bg-black hover:text-white text-black font-bold rounded-lg w-full"
+							className="bg-red-500 hover:bg-black hover:text-white text-white font-bold rounded-lg w-full"
 							style={{ padding: "15px 30px" }} // Increased padding
 						>
 							SUBMIT
