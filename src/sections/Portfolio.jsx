@@ -1,10 +1,10 @@
 
-import project1 from '../assets/project1.jpeg'
-import project2 from '../assets/project2.jpeg'
+import project1 from '../assets/project-1.jpeg'
+import project2 from '../assets/project-2.jpeg'
 import project3 from '../assets/project3.jpg'
 import project4 from '../assets/project4.jpg'
 import project5 from '../assets/project5.jpg'
-import project6 from '../assets/project6.jpg'
+import project6 from '../assets/project-6.jpeg'
 import project7 from '../assets/project7.jpg'
 import project8 from '../assets/project8.jpg'
 import { motion } from "framer-motion";
