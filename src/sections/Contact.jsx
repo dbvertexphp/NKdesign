@@ -20,33 +20,62 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Handle form submission
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
+  // // Handle form submission
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setLoading(true);
 
-    try {
-      const res = await axios.post(`${BASE_URL}/api/inquiries`, formData);
+  //   try {
+  //     const res = await axios.post(`${BASE_URL}/api/inquiries`, formData);
 
-      // Show SweetAlert2 success message
-      Swal.fire({
-        icon: "success",
-        title: "Message Sent!",
-        text: res.data.message,
-        confirmButtonColor: "#d33",
-      });
+  //     // Show SweetAlert2 success message
+  //     Swal.fire({
+  //       icon: "success",
+  //       title: "Message Sent!",
+  //       text: res.data.message,
+  //       confirmButtonColor: "#d33",
+  //     });
 
-      setFormData({ fullName: "", email: "", phoneNumber: "", message: "" }); // Clear form after submission
-    } catch (error) {
-      Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: "Failed to send message. Try again.",
-      });
-    } finally {
-      setLoading(false);
-    }
-  };
+  //     setFormData({ fullName: "", email: "", phoneNumber: "", message: "" }); // Clear form after submission
+  //   } catch (error) {
+  //     Swal.fire({
+  //       icon: "error",
+  //       title: "Oops...",
+  //       text: "Failed to send message. Try again.",
+  //     });
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
+
+	const handleSubmit = async (e) => {
+		e.preventDefault();
+		setLoading(true);
+	
+		try {
+			const res = await axios.post(`${BASE_URL}/api/inquiries`, formData);
+	
+			// Show SweetAlert2 success message
+			Swal.fire({
+				icon: "success",
+				title: "Message Sent!",
+				text: res.data.message,
+				confirmButtonColor: "#d33",
+			});
+	
+			setFormData({ fullName: "", email: "", phoneNumber: "", message: "" }); // Clear form after submission
+		} catch (error) {
+			console.error("Error response:", error.response); // Log error response
+	
+			Swal.fire({
+				icon: "error",
+				title: "Oops...",
+				text: error.response?.data?.message || "Failed to send message. Try again.",
+			});
+		} finally {
+			setLoading(false);
+		}
+	}
 
   return (
     <div id="contact" className="bg-white w-full">

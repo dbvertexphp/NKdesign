@@ -10,7 +10,7 @@ const Testimonials = () => {
   };
   const handlefeedback = () => {
     // This URL will redirect to the review section where users can either give a review.
-    window.location.href = "https://www.google.com/maps/place/Nk+design+and+construction/@25.1570214,73.0727325,17z/data=!4m16!1m9!3m8!1s0x3942ed8db5fb9b67:0x4914b1dbe2d142ee!2sNk+design+and+construction!8m2!3d25.1570214!4d73.0727325!9m1!1b1!16s%2Fg%2F11kbsr2gm8!3m5!1s0x3942ed8db5fb9b67:0x4914b1dbe2d142ee!8m2!3d25.1570214!4d73.0727325!16s%2Fg%2F11kbsr2gm8?entry=ttu&g_ep=EgoyMDI1MDIxOC4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D";
+    window.location.href = "https://www.google.com/maps/place/Nk+design+and+construction/@25.1570214,73.0727325,17z/data=!4m8!3m7!1s0x3942ed8db5fb9b67:0x4914b1dbe2d142ee!8m2!3d25.1570214!4d73.0727325!9m1!1b1!16s%2Fg%2F11kbsr2gm8?entry=ttu&g_ep=EgoyMDI1MDIxNy4wIKXMDSoASAFQAw%3D%3D";
   };
   return (
     <div id="clients" className="w-full flex flex-col lg:flex-row">

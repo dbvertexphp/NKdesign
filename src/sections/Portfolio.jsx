@@ -28,6 +28,7 @@ const Portfolio = () => {
 
   return (
     <motion.div
+		id="projects"
       initial="hidden"
       whileInView="visible"
       variants={slideUpVariants}

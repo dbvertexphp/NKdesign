@@ -15,7 +15,7 @@ const Header = () => {
   };
 
   const navItems = [
-    { link: "Home", path: "home" },
+    { link: "Home", path: "hero" },
     { link: "About", path: "about" },
     { link: "Services", path: "services" },
     { link: "Projects", path: "projects" },
@@ -24,7 +24,7 @@ const Header = () => {
 
   // Function to handle redirection to Google Location for NK Design
   const handleReachUs = () => {
-    window.location.href = "https://www.google.com/maps?q=NK+Design+and+Construction,+Pali+bus+stand+road,+near+bawarchi+restaurant,+Ushapuri,+Sumerpur,+Rajasthan+306902"; // NK Design Google Location
+    window.location.href = "https://www.google.com/maps/dir//Nk+design+and+construction,+Pali+bus+stand+road,+near+bawarchi+restaurant,+Ushapuri,+Sumerpur,+Rajasthan+306902/@25.1570214,73.0727325,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3942ed8db5fb9b67:0x4914b1dbe2d142ee!2m2!1d73.0727325!2d25.1570214!3e0?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D"; // NK Design Google Location
   };
 
   return (
